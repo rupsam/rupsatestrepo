@@ -15,7 +15,7 @@
       "essential": true,
       "environment": [
           {
-              "name": "NODE_ENV",
+              "name": "JAVA_ENV",
               "value": "production"
           }
       ]
