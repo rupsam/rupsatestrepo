@@ -2,7 +2,7 @@
   "family": "jenkins-demo-containers",
   "containerDefinitions": [
     {
-      "name": "Jenkins-demo",
+      "name": "jenkins-demo-containers",
       "image": "101262499873.dkr.ecr.eu-central-1.amazonaws.com/jenkins-repo:latest",
       "cpu": 10,
       "memory": 300,
