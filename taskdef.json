@@ -13,12 +13,13 @@
           }
       ],
       "essential": true,
-      "environment": [
-          {
-              "name": "JAVA_ENV",
-              "value": "production"
-          }
-      ]
+      "logConfiguration": null,
+      "environment": [],
+      "ulimits": null,
+      "mountPoints": [],
+      "volumesFrom": [],
+      "extraHosts": null,
+      "dockerLabels": null
     }
   ]
 }
