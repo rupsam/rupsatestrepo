@@ -1,8 +1,8 @@
 {
     "family": "jenkins-demo-containers", 
-    "taskRoleArn": "", 
-    "executionRoleArn": "", 
-    "networkMode": "awsvpc", 
+    "taskRoleArn": "arn:aws:iam::101262499873:role/ecsInstanceRole", 
+    "executionRoleArn": "arn:aws:iam::101262499873:role/ecsInstanceRole", 
+    "networkMode": "bridge", 
     "containerDefinitions": [
         {
             "name": "jenkins-task", 
