@@ -83,7 +83,7 @@
 		}
 	}],
 	"volumes": [{
-		"name": "",
+		"name": "volume1",
 		"host": {
 			"sourcePath": ""
 		}
