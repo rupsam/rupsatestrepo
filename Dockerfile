@@ -1,6 +1,5 @@
-FROM java:8
-RUN javac TestFileHello.java
-EXPOSE 8080
+FROM alpine:latest
+ADD TestFileHello.class TestFileHello.class
+RUN apk --update add openjdk8-jre
 ENTRYPOINT ["java"]
-CMD java TestFileHello
 
