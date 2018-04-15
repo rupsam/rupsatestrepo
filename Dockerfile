@@ -1,5 +1,6 @@
-FROM alpine:latest
-ADD TestFileHello.class TestFileHello.class
-RUN apk --update add openjdk8-jre
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "TestFileHello"]
+FROM java:8
+RUN javac TestFileHello.java
+EXPOSE 8080
+ENTRYPOINT ["java"]
+CMD java TestFileHello
 
