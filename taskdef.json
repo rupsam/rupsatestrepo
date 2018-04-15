@@ -87,7 +87,7 @@
 	}],
 	"placementConstraints": [{
 		"type": "memberOf",
-		"expression": ""
+		"expression": "attribute:ecs.instance-type =~ t2.*"
 	}],
 	"requiresCompatibilities": [
 		"EC2"
