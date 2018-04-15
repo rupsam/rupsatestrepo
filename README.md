@@ -1,3 +1,3 @@
 # rupsatestrepo
 
-GIT changes new1
+GIT changes
