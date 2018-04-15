@@ -51,7 +51,7 @@
 				"KeyName": ""
 			}
 		}
-	}]
+	}],
 	"placementConstraints": [{
 		"type": "memberOf",
 		"expression": "attribute:ecs.instance-type =~ t2.*"
