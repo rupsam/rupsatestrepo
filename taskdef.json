@@ -6,8 +6,6 @@
 	"containerDefinitions": [{
 		"name": "jenkins-demo-containers",
 		"image": "101262499873.dkr.ecr.eu-central-1.amazonaws.com/jenkins-repo:latest",
-		"cpu": 128,
-		"memory": 300,
 		"portMappings": [{
 			"containerPort": 8080,
 			"hostPort": 8080
