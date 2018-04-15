@@ -21,32 +21,6 @@
 			"name": "javaenv",
 			"value": "prod"
 		}],
-		"mountPoints": [{
-			"sourceVolume": "",
-			"containerPath": "",
-			"readOnly": true
-		}],
-		"linuxParameters": {
-			"capabilities": {
-				"add": [
-					""
-				],
-				"drop": [
-					""
-				]
-			},
-			"devices": [{
-				"hostPath": "",
-				"containerPath": "",
-				"permissions": [
-					"read"
-				]
-			}],
-			"initProcessEnabled": true
-		},
-		"hostname": "",
-		"user": "",
-		"workingDirectory": "",
 		"disableNetworking": true,
 		"privileged": true,
 		"readonlyRootFilesystem": true,
@@ -77,10 +51,7 @@
 				"KeyName": ""
 			}
 		}
-	}],
-	"volumes": [{
-		"name": "volume1"
-	}],
+	}]
 	"placementConstraints": [{
 		"type": "memberOf",
 		"expression": "attribute:ecs.instance-type =~ t2.*"
