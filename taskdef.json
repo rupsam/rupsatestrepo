@@ -83,10 +83,7 @@
 		}
 	}],
 	"volumes": [{
-		"name": "volume1",
-		"host": {
-			"sourcePath": ""
-		}
+		"name": "volume1"
 	}],
 	"placementConstraints": [{
 		"type": "memberOf",
