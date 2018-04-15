@@ -1,122 +1,102 @@
 {
-    "family": "jenkins-demo-containers", 
-    "taskRoleArn": "arn:aws:iam::101262499873:role/ecsInstanceRole", 
-    "executionRoleArn": "arn:aws:iam::101262499873:role/ecsInstanceRole", 
-    "networkMode": "bridge", 
-    "containerDefinitions": [
-        {
-            "name": "jenkins-demo-containers", 
-            "image": "101262499873.dkr.ecr.eu-central-1.amazonaws.com/jenkins-repo:latest", 
-            "cpu": 10, 
-            "memory": 300, 
-            "portMappings": [
-                {
-                    "containerPort": 8080, 
-                    "hostPort": 8080
-                }
-            ], 
-            "essential": true, 
-            "entryPoint": [
-                ""
-            ], 
-            "command": [
-                ""
-            ], 
-            "environment": [
-                {
-                    "name": “java_env”, 
-                    "value": “prod”
-                }
-            ], 
-            "mountPoints": [
-                {
-                    "sourceVolume": "", 
-                    "containerPath": "", 
-                    "readOnly": true
-                }
-            ], 
-            "volumesFrom": [
-                {
-                    "sourceContainer": "", 
-                    "readOnly": true
-                }
-            ], 
-            "linuxParameters": {
-                "capabilities": {
-                    "add": [
-                        ""
-                    ], 
-                    "drop": [
-                        ""
-                    ]
-                }, 
-                "devices": [
-                    {
-                        "hostPath": "", 
-                        "containerPath": "", 
-                        "permissions": [
-                            "read"
-                        ]
-                    }
-                ], 
-                "initProcessEnabled": true
-            }, 
-            "hostname": "", 
-            "user": "", 
-            "workingDirectory": "", 
-            "disableNetworking": true, 
-            "privileged": true, 
-            "readonlyRootFilesystem": true, 
-            "dnsServers": [
-                ""
-            ], 
-            "dnsSearchDomains": [
-                ""
-            ], 
-            "extraHosts": [
-                {
-                    "hostname": "", 
-                    "ipAddress": ""
-                }
-            ], 
-            "dockerSecurityOptions": [
-                ""
-            ], 
-            "dockerLabels": {
-                "KeyName": ""
-            }, 
-            "ulimits": [
-                {
-                    "name": "rss", 
-                    "softLimit": 0, 
-                    "hardLimit": 0
-                }
-            ], 
-            "logConfiguration": {
-                "logDriver": "awslogs", 
-                "options": {
-                    "KeyName": ""
-                }
-            }
-        }
-    ], 
-    "volumes": [
-        {
-            "name": "", 
-            "host": {
-                "sourcePath": ""
-            }
-        }
-    ], 
-    "placementConstraints": [
-        {
-            "type": "memberOf", 
-            "expression": ""
-        }
-    ], 
-    "requiresCompatibilities": [
-        "EC2"
-    ], 
-    "cpu": "", 
-    "memory": ""
+	"family": "jenkins-demo-containers",
+	"taskRoleArn": "arn:aws:iam::101262499873:role/ecsInstanceRole",
+	"executionRoleArn": "arn:aws:iam::101262499873:role/ecsInstanceRole",
+	"networkMode": "bridge",
+	"containerDefinitions": [{
+		"name": "jenkins-demo-containers",
+		"image": "101262499873.dkr.ecr.eu-central-1.amazonaws.com/jenkins-repo:latest",
+		"cpu": 10,
+		"memory": 300,
+		"portMappings": [{
+			"containerPort": 8080,
+			"hostPort": 8080
+		}],
+		"essential": true,
+		"entryPoint": [
+			""
+		],
+		"command": [
+			""
+		],
+		"environment": [{
+			"name": "javaenv",
+			"value": "prod"
+		}],
+		"mountPoints": [{
+			"sourceVolume": "",
+			"containerPath": "",
+			"readOnly": true
+		}],
+		"volumesFrom": [{
+			"sourceContainer": "",
+			"readOnly": true
+		}],
+		"linuxParameters": {
+			"capabilities": {
+				"add": [
+					""
+				],
+				"drop": [
+					""
+				]
+			},
+			"devices": [{
+				"hostPath": "",
+				"containerPath": "",
+				"permissions": [
+					"read"
+				]
+			}],
+			"initProcessEnabled": true
+		},
+		"hostname": "",
+		"user": "",
+		"workingDirectory": "",
+		"disableNetworking": true,
+		"privileged": true,
+		"readonlyRootFilesystem": true,
+		"dnsServers": [
+			""
+		],
+		"dnsSearchDomains": [
+			""
+		],
+		"extraHosts": [{
+			"hostname": "",
+			"ipAddress": ""
+		}],
+		"dockerSecurityOptions": [
+			""
+		],
+		"dockerLabels": {
+			"KeyName": ""
+		},
+		"ulimits": [{
+			"name": "rss",
+			"softLimit": 0,
+			"hardLimit": 0
+		}],
+		"logConfiguration": {
+			"logDriver": "awslogs",
+			"options": {
+				"KeyName": ""
+			}
+		}
+	}],
+	"volumes": [{
+		"name": "",
+		"host": {
+			"sourcePath": ""
+		}
+	}],
+	"placementConstraints": [{
+		"type": "memberOf",
+		"expression": ""
+	}],
+	"requiresCompatibilities": [
+		"EC2"
+	],
+	"cpu": "",
+	"memory": ""
 }
