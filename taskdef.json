@@ -11,46 +11,9 @@
 			"hostPort": 8080
 		}],
 		"essential": true,
-		"entryPoint": [
-			""
-		],
-		"command": [
-			""
-		],
-		"environment": [{
-			"name": "javaenv",
-			"value": "prod"
-		}],
 		"disableNetworking": true,
 		"privileged": true,
 		"readonlyRootFilesystem": true,
-		"dnsServers": [
-			""
-		],
-		"dnsSearchDomains": [
-			""
-		],
-		"extraHosts": [{
-			"hostname": "",
-			"ipAddress": ""
-		}],
-		"dockerSecurityOptions": [
-			""
-		],
-		"dockerLabels": {
-			"KeyName": ""
-		},
-		"ulimits": [{
-			"name": "rss",
-			"softLimit": 0,
-			"hardLimit": 0
-		}],
-		"logConfiguration": {
-			"logDriver": "awslogs",
-			"options": {
-				"KeyName": ""
-			}
-		}
 	}],
 	"placementConstraints": [{
 		"type": "memberOf",
