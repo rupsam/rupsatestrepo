@@ -13,7 +13,7 @@
 		"essential": true,
 		"disableNetworking": true,
 		"privileged": true,
-		"readonlyRootFilesystem": true,
+		"readonlyRootFilesystem": true
 	}],
 	"placementConstraints": [{
 		"type": "memberOf",
