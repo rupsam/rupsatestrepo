@@ -1,4 +1,4 @@
 # rupsatestcontinuosbuild
 
 GIT changes
-test AA
+test AA BB
